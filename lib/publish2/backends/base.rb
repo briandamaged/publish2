@@ -8,7 +8,7 @@ module Publish2::Backends
       self.class.name
     end
 
-    def store(name, src_path)
+    def publish(name, src_path)
       raise NotImplementedError
     end
 

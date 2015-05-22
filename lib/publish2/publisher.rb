@@ -13,12 +13,12 @@ module Publish2
       @backend = options.fetch(:backend)
     end
 
-    def store(src_path)
+    def publish(src_path)
       name = namer.name_for(src_path)
 
       return {
         type:    backend.type,
-        locator: backend.store(name, src_path)
+        locator: backend.publish(name, src_path)
       }
 
     end

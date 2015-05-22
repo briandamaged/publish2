@@ -20,7 +20,7 @@ module Publish2::Backends
     end
 
 
-    def store(name, src_path)
+    def publish(name, src_path)
       FileUtils.mkdir_p root_path
 
       dest_path = File.join(root_path, name)
