@@ -2,7 +2,7 @@ require_relative '__module__'
 
 require 'fileutils'
 
-module Store2
+module Publish2
 
   # Just stashes the data into a folder.
   class Folder

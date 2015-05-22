@@ -2,7 +2,7 @@ require_relative '__module__'
 
 require 'securerandom'
 
-module Store2::Namers
+module Publish2::Namers
 
   module UUID
 

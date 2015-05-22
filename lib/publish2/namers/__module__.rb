@@ -1,4 +1,4 @@
 require_relative '../__module__'
 
-module Store2::Namers
+module Publish2::Namers
 end

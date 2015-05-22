@@ -1,6 +1,6 @@
 require_relative '__module__'
 
-module Store2
+module Publish2
 
   class Vault
 
