@@ -1,7 +1,7 @@
 
 Gem::Specification.new do |s|
   s.name        = 'publish2'
-  s.version     = '1.0.0.alpha.1'
+  s.version     = '1.0.0.alpha.2'
   s.date        = '2015-05-20'
   s.summary     = "Generic API for storing data"
   s.description = "Generic API for storing data"

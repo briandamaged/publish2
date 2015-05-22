@@ -7,7 +7,7 @@ require 'fileutils'
 module Publish2::Backends
 
   # Just stashes the data into a folder.
-  class Folder < Backend
+  class Folder < Base
 
     attr_reader :root_path
 

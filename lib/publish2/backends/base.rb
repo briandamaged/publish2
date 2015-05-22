@@ -2,7 +2,7 @@ require_relative '__module__'
 
 module Publish2::Backends
 
-  class Backend
+  class Base
 
     def type
       self.class.name
