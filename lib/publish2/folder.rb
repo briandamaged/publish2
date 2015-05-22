@@ -1,11 +1,13 @@
 require_relative '__module__'
 
+require_relative 'backend'
+
 require 'fileutils'
 
 module Publish2
 
   # Just stashes the data into a folder.
-  class Folder
+  class Folder < Backend
 
     attr_reader :root_path
 
@@ -18,10 +20,10 @@ module Publish2
     end
 
 
-    def store(name, src)
-      dest = File.join(root_path, name)
-      FileUtils.cp src, dest
-      return dest
+    def store(name, src_path)
+      dest_path = File.join(root_path, name)
+      FileUtils.cp src_path, dest_path
+      return dest_path
     end
 
   end
