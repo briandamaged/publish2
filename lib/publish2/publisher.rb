@@ -15,7 +15,12 @@ module Publish2
 
     def store(src_path)
       name = namer.name_for(src_path)
-      backend.store(name, src_path)
+
+      return {
+        type:    backend.type,
+        locator: backend.store(name, src_path)
+      }
+
     end
 
   end
